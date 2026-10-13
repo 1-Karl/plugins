@@ -1,0 +1,65 @@
+KOTHBox (“COT”)
+- /whenkoth — mostra quando será o próximo evento.
+- /claimkoth — resgata uma recompensa KOTH pendente.
+- /setkothbox <nome> <raio> — cria uma área KOTH na sua posição.
+- /deletekothbox <nome> — exclui uma área cadastrada.
+- /kothboxes — lista as áreas cadastradas.
+- /previewkothbox <raio> [duração] — mostra uma prévia temporária da cúpula na sua posição.
+- /testkothbox <nome> [duração] — mostra uma prévia temporária de uma área cadastrada.
+- /startkoth [nome da área] [nível da recompensa] — inicia o evento. Sem nome, escolhe uma área cadastrada aleatoriamente.
+- /stopkoth — encerra o evento; se já estiver valendo, escolhe um vencedor.
+- reloadkothboxes — recarrega as áreas salvas. Só no console, sem /.
+A permissão de cada comando usa o próprio nome — por exemplo, startkoth e setkothbox.
+
+
+CrystalTVT
+- /register — inscreve você no evento e sorteia seu time.
+- /tvtleave — sai do evento.
+- /tvtclaim — resgata o prêmio do time vencedor.
+- /tvtadmin status — consulta o estado, placar e próximo evento.
+- /tvtadmin start — abre as inscrições.
+- /tvtadmin stop — encerra o evento.
+- /tvtadmin setspawn <before|after|red|blue> — salva os pontos de entrada, saída e spawn dos times na sua posição atual.
+- /tvtadmin setkit <red|blue> — salva seu inventário como kit do time escolhido.
+- /tvtadmin mode <time|kills> — escolhe se o evento termina por tempo ou por meta de eliminações.
+- /tvtadmin kills <meta> — define a meta de eliminações.
+- /tvtadmin duration <segundos> — define a duração quando o modo é por tempo.
+- /tvtadmin schedule <mínimo> <máximo> — define o intervalo automático, em minutos.
+- /tvtadmin winscreen <segundos> — define por quanto tempo aparece o aviso de vitória.
+- /tvtadmin reload — recarrega configuração e kits.
+Jogadores usam a permissão crystaltvt.use; administração usa crystaltvt.admin.
+Giveaway
+Jogadores
+- /giveaway — abre o painel.
+- /giveaway 1, /giveaway 2, /giveaway 3 — tenta resgatar o kit correspondente ao prêmio que ganhou.
+Permissão: giveaway.use.
+Administração
+- /creategiveaway <horas> — cria uma campanha por pontos.
+- /creategiveaway <minutos>m — cria uma campanha curta em minutos; por exemplo, /creategiveaway 1m.
+- /creategiveaway <tempo> sorteio <top> — usa modo sorteio entre os jogadores do Top indicado.
+- /giveawaypreview [tempo [pontos|sorteio <top>]] — mostra uma prévia sem iniciar campanha.
+- /givekit <1|2|3> <nome> <URL_da_imagem> — salva o inventário atual como kit daquele prêmio.
+- /cancelgiveaway — cancela a campanha atual.
+- /rerollgiveaway <número_do_kit> — troca o vencedor daquele kit em um sorteio encerrado, se o prêmio ainda não foi resgatado.
+- /gaadmin status — consulta campanha, vencedores e estado das recompensas.
+- /gaadmin close — encerra a campanha e registra os vencedores.
+- /gaadmin cancel — cancela a campanha.
+- /gaadmin enable e /gaadmin disable — ativa ou desativa o giveaway.
+- /gaadmin reload — recarrega configuração, imagens e kits.
+- /gaadmin retry <SteamID64> <número_do_comando> — libera para nova tentativa uma recompensa que falhou ou ficou incerta.
+- /gaadmin webhookretry [campanha] — tenta reenviar o resultado ao Discord.
+Permissões: comandos de administração usam giveaway.admin; comandos de jogador usam giveaway.use. /gaadmin start e /gaadmin kit foram removidos; use /creategiveaway e /givekit.
+PvPBox
+- /pvpbox — resgata o prêmio sorteado quando você atingir a meta de kills PvP.
+Permissão: pvpbox.
+Skins
+- /skins — abre a interface de skins.
+- /skins weapons ou /skins armas — abre na categoria de armas.
+- /skins armor ou /skins armaduras — abre na categoria de armaduras.
+- /skins page <número> ou /skins pagina <número> — abre uma página.
+- /skins close ou /skins fechar — fecha a interface.
+- /skins open ou /skins abrir — abre a interface.
+O comando não declara uma permissão própria no plugin.
+SafeZone
+- /setsafe — salva sua posição atual como safe zone.
+- /setsafezone — alias de /setsafe.
