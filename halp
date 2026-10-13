@@ -1,4 +1,4 @@
-KOTHBox (“COT”)
+KOTHBox (“Box”)
 - /whenkoth — mostra quando será o próximo evento.
 - /claimkoth — resgata uma recompensa KOTH pendente.
 - /setkothbox <nome> <raio> — cria uma área KOTH na sua posição.
@@ -28,6 +28,10 @@ CrystalTVT
 - /tvtadmin winscreen <segundos> — define por quanto tempo aparece o aviso de vitória.
 - /tvtadmin reload — recarrega configuração e kits.
 Jogadores usam a permissão crystaltvt.use; administração usa crystaltvt.admin.
+
+
+
+
 Giveaway
 Jogadores
 - /giveaway — abre o painel.
@@ -49,6 +53,9 @@ Administração
 - /gaadmin retry <SteamID64> <número_do_comando> — libera para nova tentativa uma recompensa que falhou ou ficou incerta.
 - /gaadmin webhookretry [campanha] — tenta reenviar o resultado ao Discord.
 Permissões: comandos de administração usam giveaway.admin; comandos de jogador usam giveaway.use. /gaadmin start e /gaadmin kit foram removidos; use /creategiveaway e /givekit.
+
+
+
 PvPBox
 - /pvpbox — resgata o prêmio sorteado quando você atingir a meta de kills PvP.
 Permissão: pvpbox.
@@ -60,6 +67,8 @@ Skins
 - /skins close ou /skins fechar — fecha a interface.
 - /skins open ou /skins abrir — abre a interface.
 O comando não declara uma permissão própria no plugin.
+
+
 SafeZone
 - /setsafe — salva sua posição atual como safe zone.
 - /setsafezone — alias de /setsafe.
